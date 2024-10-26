@@ -5,14 +5,13 @@ const message = `
       <style>
         body { 
           font-family: Arial, sans-serif; 
-          background: linear-gradient(135deg, #34A853, #FFCC00); /* Brazilian flag-inspired gradient */
-          color: #FFFFFF; /* White text for contrast */
+          background-color: #34A853; 
+          color: #FFCC00; 
           text-align: center; 
           padding: 50px;
         }
         h1 {
           font-size: 3em;
-          color: #003366; /* Dark blue for Brazil's flag */
         }
         p {
           font-size: 1.5em;
@@ -32,4 +31,3 @@ const message = `
       <p>Curta o código e sinta a vibe tech com uma pitada de Brasil! 🎉🍻</p>
     </body>
   </html>`;
-
