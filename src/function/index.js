@@ -17,10 +17,14 @@ async function handleRequest(request, args) {
             color: #FFFFFF; /* White text for contrast */
             text-align: center; 
             padding: 50px;
+            animation: fadeIn 2s; /* Fade in effect for the body */
           }
           h1 {
             font-size: 3em;
             color: #003366; /* Dark blue for Brazil's flag */
+            opacity: 0; /* Start hidden for fade-in */
+            animation: fadeIn 2s forwards; /* Fade-in effect */
+            animation-delay: 0.5s; /* Delay before fade-in */
           }
           p {
             font-size: 1.5em;
@@ -30,12 +34,23 @@ async function handleRequest(request, args) {
             color: #FF5733;
             font-weight: bold;
           }
+          .flag-emoji {
+            display: inline-block;
+            animation: rotate 4s linear infinite; /* Rotate animation for the flag emoji */
+          }
+          @keyframes fadeIn {
+            to { opacity: 1; }
+          }
+          @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
         </style>
       </head>
       <body>
         <h1>👋 Olá Mundo!</h1>
         <p>Bem-vindos, amigos da Azion! 🌎</p>
-        <p>A gente trouxe um <span class="highlight">"Hello World"</span> pra vocês, com aquele toque de Brasil... e um pouco de <span class="highlight">phonk</span> no background pra animar! 🎶🇧🇷</p>
+        <p>A gente trouxe um <span class="highlight">"Hello World"</span> pra vocês, com aquele toque de Brasil... e um pouco de <span class="highlight">phonk</span> no background pra animar! 🎶<span class="flag-emoji">🇧🇷</span></p>
         <p><span class="highlight">Fala sério</span>, até no código a gente coloca o groove brasileiro! 🕺⚽</p>
         <p>Curta o código e sinta a vibe tech com uma pitada de Brasil! 🎉🍻</p>
       </body>
