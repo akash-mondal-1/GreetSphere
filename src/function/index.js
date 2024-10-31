@@ -66,7 +66,7 @@ async function handleRequest(request, args) {
         <p>Curta o código e sinta a vibe tech com uma pitada de Brasil! 🎉🍻</p>
         <div>
           <span class="thumbs-up" onclick="handleFeedback()">👍</span> <!-- Thumbs up icon for feedback -->
-          <p>Se você gostou, clique no "👍"! 👇</p>
+          <p>Se você gostou, clique no "👍"! 👆</p>
         </div>
       </body>
     </html>`;
